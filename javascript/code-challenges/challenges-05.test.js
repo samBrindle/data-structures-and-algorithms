@@ -145,10 +145,9 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 
 const reversedString = (str) => {
   // Solution code here...
-  let newStr = str.reduce( (str, char, idx) => {
-    return str = char[idx];
-  },'');
-  return newStr;
+  return str.split('').reduce( (accumulator, current) => {
+    return current + accumulator;
+  }, '');
 };
 
 /* ------------------------------------------------------------------------------------------------
