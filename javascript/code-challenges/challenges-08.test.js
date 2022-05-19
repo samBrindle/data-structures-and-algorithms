@@ -55,16 +55,12 @@ let characters = [
 const sortByChildren = (charArray) => {
   // Solution code here...
   return charArray.sort( (person1, person2) => {
-    if(person1.children.length === person2.children.length) {
-      if(person1 > person2) {
-        return;
-      } else if(person1 < person2) {
-        return -1;
-      }
+    if(person1.children.length > person2.children.length) {
+      return 1;
     } else if(person1.children.length < person2.children.length){
       return -1;
-    } else if(person1.children.length > person2.children.length) {
-      return;
+    } else {
+      return person1.house > person2.house ? 1: -1;
     }
   });
   // return charArray.sort((person1, person2) => person1.children.length - person2.children.length);
@@ -140,11 +136,8 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 
 const citiesAtoJ = (arr) => {
   // Solution code here...
-  let regex = /[A-K]\w+/;
-  let newArr = [];
-  for( let i = 0; i < arr.length; i++) {
-    if
-  }
+  let regex = /^[A-J]/;
+  return arr.filter(city => regex.test(city));
 };
 
 /* ------------------------------------------------------------------------------------------------
