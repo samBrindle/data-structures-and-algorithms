@@ -1,31 +1,32 @@
 class LinkedList:
-    def __init__(self):
-        self.head = None
+    def __init__(self, head=None):
+        self.head = head
 
     def insert(self, value):
-        if self.head == None:
-            self.head = Node(value)
-        else:
-            self.value = Node(value)
+        self.head = Node(value, self.head)
+
+    def includes(self, value):
+        current = self.head
+        while current is not None:
+            if current.value == value:
+                return True
+            else:
+                current = current.next
+
+        return False
 
     def __str__(self):
-        string = "{ "
+        dummy_node = self.head
+        string = ""
         # dummyNode helps you keep track of head of linkedList
         # dummyNode = self.head
         # dummyNode.next and so on
 
-        if self.head is None:
-            return "NULL"
-        else:
-            dummy_node = self.head
-            while dummy_node.value.next is not None:
-                string + f"{dummy_node.value}" + " } -> "
-
-            return string + " NULL"
-            # while self.head.value != None:
-            #     string + f"{ self.head.value } -> "
-            # return string + "NULL"
-            # return"{ " + f"{self.head.value}" + " } -> NULL"
+        while dummy_node is not None:
+            string += "{ " + f"{dummy_node.value}" + " } -> "
+            dummy_node = dummy_node.next
+        string += "NULL"
+        return string
 
 
 class Node:
