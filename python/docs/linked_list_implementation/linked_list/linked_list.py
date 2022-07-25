@@ -15,6 +15,14 @@ class LinkedList:
 
         return False
 
+    def append(self, value):
+        current = self.head
+        while current.next is not None:
+            current = current.next
+
+        current.next = Node(value)
+
+
     def __str__(self):
         dummy_node = self.head
         string = ""
@@ -33,3 +41,6 @@ class Node:
     def __init__(self, value, next=None):
         self.value = value
         self.next = next
+
+class TargetError(Exception):
+    pass
