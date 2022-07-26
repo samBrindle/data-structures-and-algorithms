@@ -57,6 +57,19 @@ class LinkedList:
         else:
             raise TargetError
 
+    def kth_from_end(self, k):
+        current = self.head
+        node_list = []
+
+        while current is not None:
+            node_list.insert(0,current.value)
+            current = current.next
+
+        if 0 <= k < len(node_list):
+            return node_list[k]
+        else:
+            raise TargetError
+
     def __str__(self):
         dummy_node = self.head
         string = ""
