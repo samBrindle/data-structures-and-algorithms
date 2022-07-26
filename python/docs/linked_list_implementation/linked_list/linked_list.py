@@ -25,6 +25,7 @@ class LinkedList:
     # Got help form Ben Small with this layout
     def insert_before(self, value, new_value):
         current = self.head
+
         if current is None:
             raise TargetError
         elif current.value == value:
@@ -33,13 +34,28 @@ class LinkedList:
         else:
             current = self.head
             while current.next is not None:
+
                 if current.next.value == value:
                     current.next = Node(new_value, current.next)
                     break
                 else:
                     current = current.next
+
             else:
                 raise TargetError
+
+    def insert_after(self, value, new_value):
+        current = self.head
+        while current is not None:
+
+            if current.value == value:
+                current.next = Node(new_value, current.next)
+                break
+            else:
+                current = current.next
+
+        else:
+            raise TargetError
 
     def __str__(self):
         dummy_node = self.head
