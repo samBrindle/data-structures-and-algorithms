@@ -65,7 +65,7 @@ class LinkedList:
             node_list.insert(0,current.value)
             current = current.next
 
-        if 0 <= k < len(node_list):
+        if 0 < k < len(node_list):
             return node_list[k]
         else:
             raise TargetError

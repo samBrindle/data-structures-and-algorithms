@@ -11,3 +11,5 @@ linked list
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 I took the TDD approach to this assignment using an iterative solution. By utilizing the tests, I slowly worked on solving the tests in order until
 I had passed all the tests.
+
+![Whiteboard](/kth_from_end_whiteboard.png)
