@@ -2,7 +2,6 @@ import pytest
 from linked_list.linked_list import LinkedList, TargetError
 
 
-
 def test_append():
     linked_list = LinkedList()
 
@@ -15,7 +14,6 @@ def test_append():
     assert str(linked_list) == "{ banana } -> { apple } -> { cucumber } -> NULL"
 
 
-@pytest.mark.skip("TODO")
 def test_insert_before():
     linked_list = LinkedList()
 
@@ -28,7 +26,6 @@ def test_insert_before():
     assert str(linked_list) == "{ banana } -> { cucumber } -> { apple } -> NULL"
 
 
-@pytest.mark.skip("TODO")
 def test_insert_before_first():
     linked_list = LinkedList()
 
@@ -52,7 +49,6 @@ def test_insert_after():
     assert str(linked_list) == "{ banana } -> { cucumber } -> { apple } -> NULL"
 
 
-@pytest.mark.skip("TODO")
 def test_insert_before_empty():
     linked_list = LinkedList()
 
@@ -60,7 +56,6 @@ def test_insert_before_empty():
         linked_list.insert_before("radish", "zucchinni")
 
 
-@pytest.mark.skip("TODO")
 def test_insert_before_missing():
     linked_list = LinkedList()
 
