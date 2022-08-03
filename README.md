@@ -26,3 +26,5 @@ To run your tests
 - [Array Insert Shift](python/docs/array_insert_reverse.README.md)
 - [Array Binary Search](python/docs/array_binary_search.README.md)
 - [Linked List](python/docs/linked_list_implementation)
+- [Stack Queue Pseudo](python/docs/stack_queue_pseudo)
+- [Stack Queue Animal Shelter](python/docs/stack_queue_animal_shelter)
