@@ -28,3 +28,4 @@ To run your tests
 - [Linked List](python/docs/linked_list_implementation)
 - [Stack Queue Pseudo](python/docs/stack_queue_pseudo)
 - [Stack Queue Animal Shelter](python/docs/stack_queue_animal_shelter)
+- [Multi Bracket Validation](python/docs/stack_queue_brackets/)
