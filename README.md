@@ -31,3 +31,4 @@ To run your tests
 - [Multi Bracket Validation](python/docs/stack_queue_brackets/)
 - [Tree Breadth First](python/docs/tree_breadth_first)
 - [Tree Fuzz Buzz](python/docs/trees)
+- [Find Maximum Value](python/docs/trees)
