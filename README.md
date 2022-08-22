@@ -32,3 +32,4 @@ To run your tests
 - [Tree Breadth First](python/docs/tree_breadth_first)
 - [Tree Fuzz Buzz](python/docs/trees)
 - [Find Maximum Value](python/docs/trees)
+- [Insertion Sort](sorting/insertion)
