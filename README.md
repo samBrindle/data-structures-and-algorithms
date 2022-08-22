@@ -30,4 +30,5 @@ To run your tests
 - [Stack Queue Animal Shelter](python/docs/stack_queue_animal_shelter)
 - [Multi Bracket Validation](python/docs/stack_queue_brackets/)
 - [Tree Breadth First](python/docs/tree_breadth_first)
+- [Tree Fuzz Buzz](python/docs/trees)
 - [Find Maximum Value](python/docs/trees)
