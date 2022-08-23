@@ -33,3 +33,4 @@ To run your tests
 - [Tree Fuzz Buzz](python/docs/trees)
 - [Find Maximum Value](python/docs/trees)
 - [Insertion Sort](sorting/insertion)
+- [Merge Sort](sorting/merge)
