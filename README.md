@@ -34,3 +34,4 @@ To run your tests
 - [Find Maximum Value](python/docs/trees)
 - [Insertion Sort](sorting/insertion)
 - [Merge Sort](sorting/merge)
+- [Quick Sort](sorting/quick)
