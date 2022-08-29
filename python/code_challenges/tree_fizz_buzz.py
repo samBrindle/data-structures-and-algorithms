@@ -15,7 +15,7 @@ def fizz_buzz_tree(og_tree):
         elif front.value % 3 == 0:
             front.value = "Fizz"
         elif front.value % 5 == 0:
-            front.value = "Buzz"T
+            front.value = "Buzz"
         else:
             front.value = str(front.value)
 

@@ -23,23 +23,17 @@ class Hashtable:
         bucket.insert(dic_ref)
 
     def get(self, key):
-        values = []
-        i = self.hash(key)
-        bucket = self.buckets[i]
+        hashcode = self.hash(key)
+        bucket = self.buckets[hashcode]
 
-        if not bucket:
+        if bucket is None:
             return None
+        drop = bucket.head
 
-        curr = bucket.head
-
-        while curr:
-            if key != curr.value[0]:
-                break
-            values.append(curr.value[1])
-            curr = curr.next
-
-        if len(values) >= 1:
-            return tuple(values)
+        while drop is not None:
+            if drop.value[0] == key:
+                return drop.value[1]
+            drop = drop.next
         return None
 
     def contains(self, key):
@@ -48,6 +42,7 @@ class Hashtable:
 
         if not bucket:
             return False
+        return True
 
     def keys(self):
         all_keys = []
