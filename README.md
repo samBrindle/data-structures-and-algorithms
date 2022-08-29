@@ -35,3 +35,4 @@ To run your tests
 - [Insertion Sort](sorting/insertion)
 - [Merge Sort](sorting/merge)
 - [Quick Sort](sorting/quick)
+- [Hashmap Repeated Word](python/docs/hashtable_repeated_word)
