@@ -1,34 +1,42 @@
 import pytest
 from data_structures.hashtable import Hashtable
 
-
 def test_exists():
     assert Hashtable
 
+def test_null_key():
+    pass
 
-@pytest.mark.skip("TODO")
-def test_get_apple():
-    hashtable = Hashtable()
-    hashtable.set("apple", "Used for apple sauce")
-    actual = hashtable.get("apple")
-    expected = "Used for apple sauce"
+def test_contains():
+    table = Hashtable()
+    table.set('apple', 'banana')
+    actual = table.contains('apple')
+    expected = True
+    assert actual == expected
+
+def test_contains_multiple():
+    table = Hashtable()
+    table.set('apple', 'banana')
+    table.set('attack', 'defend')
+    actual = table.contains('attack')
+    expected = True
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
-def test_internals():
-    hashtable = Hashtable(1024)
-    hashtable.set("ahmad", 30)
-    hashtable.set("silent", True)
-    hashtable.set("listen", "to me")
+def test_keys():
+    table = Hashtable()
+    table.set('apple', 'banana')
+    table.set('attack', 'defend')
+    keys = table.keys()
+    actual = keys
+    expected = ['apple', 'attack']
+    assert actual == expected
 
-    actual = []
 
-    # NOTE: purposely breaking encapsulation to test the "internals" of Hashmap
-    for item in hashtable._buckets:
-        if item:
-            actual.append(item.display())
 
-    expected = [[["silent", True], ["listen", "to me"]], [["ahmad", 30]]]
-
+def test_get():
+    table = Hashtable()
+    table.set('apple', 'banana')
+    actual = table.get('apple')
+    expected = 'banana'
     assert actual == expected

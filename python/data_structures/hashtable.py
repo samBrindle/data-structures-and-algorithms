@@ -51,8 +51,8 @@ class Hashtable:
             if bucket:
                 curr = bucket.head
                 while curr:
-                    dic_ref = curr.value
-                    all_keys.append(dic_ref[0])
+                    all_keys.append(curr.value[0])
+                    curr = curr.next
 
         return all_keys
 
