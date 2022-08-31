@@ -37,3 +37,4 @@ To run your tests
 - [Quick Sort](sorting/quick)
 - [Hashmap Repeated Word](python/docs/hashtable_repeated_word)
 - [Tree Intersection](python/docs/tree_intersection)
+- [Hashmap Left Join](python/docs/hashtable_left_join)
