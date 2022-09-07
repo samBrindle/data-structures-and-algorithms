@@ -3,19 +3,19 @@ from data_structures.graph import Graph
 from code_challenges.graph_business_trip import direct_flights
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_metroville_pandora(planets):
     names = ["Metroville", "Pandora"]
     assert direct_flights(planets, names) == (True, 82)
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_metroville_monstropolis(planets):
     names = ["Metroville", "New Monstropolis"]
     assert direct_flights(planets, names) == (True, 105)
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_arendelle_monstropolis_naboo(planets):
     names = ["Arendelle", "New Monstropolis", "Naboo"]
     assert direct_flights(planets, names) == (True, 115)
