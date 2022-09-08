@@ -40,3 +40,4 @@ To run your tests
 - [Hashmap Left Join](python/docs/hashtable_left_join)
 - [Graph Breadth First](python/docs/graph_breadth_first)
 - [Graph Business Trip](python/docs/graph_business_trip)
+- [Graph Depth First](python/docs/graph_depth_first)
